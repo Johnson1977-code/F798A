@@ -1,0 +1,135 @@
+2026-11-25T12:47:31.487Z west build --build-dir c:/ncs/F798-ssd1357/zephyr/samples/bluetooth/peripheral_nus/build c:/ncs/F798-ssd1357/zephyr/samples/bluetooth/peripheral_nus
+2026-11-25T12:47:32.456Z [0/5] Performing build step for 'peripheral_nus'
+2026-11-25T12:47:33.230Z [0/1] Re-running CMake...
+2026-11-25T12:47:33.347Z -- Application: C:/ncs/F798-ssd1357/zephyr/samples/bluetooth/peripheral_nus
+2026-11-25T12:47:33.347Z -- CMake version: 4.2.1
+2026-11-25T12:47:33.562Z -- Cache files will be written to: C:/ncs/F798-ssd1357/zephyr/.cache
+2026-11-25T12:47:33.679Z -- Zephyr version: 4.3.99 (C:/ncs/F798-ssd1357/zephyr)
+2026-11-25T12:47:33.841Z -- Found west (found suitable version "1.5.0", minimum required is "0.14.0")
+2026-11-25T12:47:36.385Z -- Board: nrf54l15dk, qualifiers: nrf54l15/cpuapp
+2026-11-25T12:47:40.452Z -- Found host-tools: zephyr 0.17.0 (C:/ncs/toolchains/936afb6332/opt/zephyr-sdk)
+2026-11-25T12:47:40.490Z -- Found toolchain: zephyr 0.17.0 (C:/ncs/toolchains/936afb6332/opt/zephyr-sdk)
+2026-11-25T12:47:40.573Z -- Found BOARD.dts: C:/ncs/F798-ssd1357/zephyr/boards/nordic/nrf54l15dk/nrf54l15dk_nrf54l15_cpuapp.dts
+2026-11-25T12:47:40.574Z -- Found devicetree overlay: C:/ncs/F798-ssd1357/zephyr/samples/bluetooth/peripheral_nus/app.overlay
+2026-11-25T12:48:17.792Z -- Generated zephyr.dts: C:/ncs/F798-ssd1357/zephyr/samples/bluetooth/peripheral_nus/build/peripheral_nus/zephyr/zephyr.dts
+2026-11-25T12:48:17.792Z -- Generated pickled edt: C:/ncs/F798-ssd1357/zephyr/samples/bluetooth/peripheral_nus/build/peripheral_nus/zephyr/edt.pickle
+2026-11-25T12:48:18.236Z -- Generated devicetree_generated.h: C:/ncs/F798-ssd1357/zephyr/samples/bluetooth/peripheral_nus/build/peripheral_nus/zephyr/include/generated/zephyr/devicetree_generated.h
+2026-11-25T12:49:09.709Z Parsing C:/ncs/F798-ssd1357/zephyr/Kconfig
+2026-11-25T12:49:09.709Z Loaded configuration 'C:/ncs/F798-ssd1357/zephyr/samples/bluetooth/peripheral_nus/build/peripheral_nus/zephyr/.config'
+2026-11-25T12:49:09.709Z Merged configuration 'C:/ncs/F798-ssd1357/zephyr/samples/bluetooth/peripheral_nus/build/peripheral_nus/zephyr/.config.sysbuild'
+2026-11-25T12:49:09.709Z No change to configuration in 'C:/ncs/F798-ssd1357/zephyr/samples/bluetooth/peripheral_nus/build/peripheral_nus/zephyr/.config'
+2026-11-25T12:49:09.710Z No change to Kconfig header in 'C:/ncs/F798-ssd1357/zephyr/samples/bluetooth/peripheral_nus/build/peripheral_nus/zephyr/include/generated/zephyr/autoconf.h'
+2026-11-25T12:49:17.539Z -- Found gen_kobject_list: C:/ncs/F798-ssd1357/zephyr/scripts/build/gen_kobject_list.py
+2026-11-25T12:49:17.831Z -- Configuring done (104.6s)
+2026-11-25T12:49:20.136Z -- Generating done (1.4s)
+2026-11-25T12:49:20.136Z -- Build files have been written to: C:/ncs/F798-ssd1357/zephyr/samples/bluetooth/peripheral_nus/build/peripheral_nus
+2026-11-25T12:49:20.137Z [1/297] Generating ../../zephyr/include/generated/zephyr_commit.h
+2026-11-25T12:49:20.137Z [2/297] Generating ../../zephyr/include/generated/ncs_version.h
+2026-11-25T12:49:20.661Z [3/297] Generating include/generated/zephyr/version.h
+2026-11-25T12:49:20.661Z -- Zephyr version: 4.3.99 (C:/ncs/F798-ssd1357/zephyr), build: ncs-v3.3.1
+2026-11-25T12:50:27.969Z [4/297] Generating misc/generated/syscalls.json, misc/generated/struct_tags.json
+2026-11-25T12:50:29.519Z [5/90] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto_base.dir/C_/ncs/F798-ssd1357/modules/crypto/mbedtls/library/bignum.c.obj
+2026-11-25T12:50:29.531Z [6/90] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto_base.dir/C_/ncs/F798-ssd1357/modules/crypto/mbedtls/library/asn1write.c.obj
+2026-11-25T12:50:29.543Z [7/90] Building C object modules/nrf/subsys/nrf_security/src/drivers/cracen/CMakeFiles/cracen_psa_driver.dir/cracenpsa/src/internal/aes/cracen_aes_cbc.c.obj
+2026-11-25T12:50:29.554Z [8/90] Building C object modules/nrf/subsys/nrf_security/src/drivers/cracen/CMakeFiles/cracen_psa_driver.dir/cracenpsa/src/internal/ecc/cracen_ecc_keygen.c.obj
+2026-11-25T12:50:29.565Z [9/90] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto_base.dir/C_/ncs/F798-ssd1357/modules/crypto/mbedtls/library/asn1parse.c.obj
+2026-11-25T12:50:29.578Z [10/90] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto_base.dir/C_/ncs/F798-ssd1357/modules/crypto/mbedtls/library/base64.c.obj
+2026-11-25T12:50:29.588Z [11/90] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto_base.dir/C_/ncs/F798-ssd1357/modules/crypto/mbedtls/library/nist_kw.c.obj
+2026-11-25T12:50:29.601Z [12/90] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto_base.dir/C_/ncs/F798-ssd1357/modules/crypto/mbedtls/library/padlock.c.obj
+2026-11-25T12:50:29.612Z [13/90] Building C object modules/nrf/subsys/nrf_security/src/drivers/cracen/CMakeFiles/cracen_psa_driver.dir/cracenpsa/src/internal/aes/cracen_aes_ecb.c.obj
+2026-11-25T12:50:29.628Z [14/90] Building C object modules/nrf/subsys/nrf_security/src/drivers/cracen/CMakeFiles/cracen_psa_driver.dir/cracenpsa/src/cracen_psa.c.obj
+2026-11-25T12:50:29.637Z [15/90] Building C object modules/nrf/subsys/nrf_security/src/drivers/cracen/CMakeFiles/cracen_psa_driver.dir/cracenpsa/src/cracen_psa_cipher.c.obj
+2026-11-25T12:50:29.647Z [16/90] Building C object modules/nrf/subsys/nrf_security/src/drivers/cracen/CMakeFiles/cracen_psa_driver.dir/sxsymcrypt/src/hmac.c.obj
+2026-11-25T12:50:29.691Z [17/90] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto_base.dir/C_/ncs/F798-ssd1357/modules/crypto/mbedtls/library/version.c.obj
+2026-11-25T12:50:29.691Z [18/90] Building C object modules/nrf/subsys/nrf_security/src/drivers/cracen/CMakeFiles/cracen_psa_driver.dir/common/src/cracen/prng_pool.c.obj
+2026-11-25T12:50:29.691Z [19/90] Building C object modules/nrf/subsys/nrf_security/src/drivers/cracen/CMakeFiles/cracen_psa_driver.dir/sxsymcrypt/src/sha3.c.obj
+2026-11-25T12:50:29.691Z [20/90] Building C object modules/nrf/subsys/nrf_security/src/drivers/cracen/CMakeFiles/cracen_psa_driver.dir/cracenpsa/src/internal/ecc/cracen_ecc_key_management.c.obj
+2026-11-25T12:50:29.760Z [21/90] Building C object modules/nrf/subsys/nrf_security/src/drivers/cracen/CMakeFiles/cracen_psa_driver.dir/common/src/cracen/cracen_rndinrange.c.obj
+2026-11-25T12:50:29.760Z [22/90] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto_base.dir/C_/ncs/F798-ssd1357/modules/crypto/mbedtls/library/constant_time.c.obj
+2026-11-25T12:50:29.760Z [23/90] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto_base.dir/C_/ncs/F798-ssd1357/modules/crypto/mbedtls/library/bignum_core.c.obj
+2026-11-25T12:50:29.760Z [24/90] Building C object modules/nrf/subsys/nrf_security/src/drivers/cracen/CMakeFiles/cracen_psa_driver.dir/cracenpsa/src/internal/ecc/cracen_ecc_helpers.c.obj
+2026-11-25T12:50:29.778Z [25/90] Building C object modules/nrf/subsys/nrf_security/src/drivers/cracen/CMakeFiles/cracen_psa_driver.dir/sxsymcrypt/src/hash.c.obj
+2026-11-25T12:50:29.778Z [26/90] Building C object modules/nrf/subsys/nrf_security/src/drivers/cracen/CMakeFiles/cracen_psa_driver.dir/common/src/cracen/common.c.obj
+2026-11-25T12:50:29.792Z [27/90] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto_base.dir/C_/ncs/F798-ssd1357/modules/crypto/mbedtls/library/oid.c.obj
+2026-11-25T12:50:29.847Z [28/90] Building C object modules/nrf/subsys/nrf_security/src/drivers/cracen/CMakeFiles/cracen_psa_driver.dir/common/src/cracen/hardware/hardware.c.obj
+2026-11-25T12:50:30.513Z [29/90] Building C object modules/nrf/subsys/nrf_security/src/drivers/cracen/CMakeFiles/cracen_psa_driver.dir/cracenpsa/src/internal/mac/cracen_mac_cmac.c.obj
+2026-11-25T12:50:30.513Z [30/90] Building C object modules/nrf/subsys/nrf_security/src/core/nrf_oberon/CMakeFiles/psa_core.dir/C_/ncs/F798-ssd1357/modules/crypto/oberon-psa-crypto/library/platform.c.obj
+2026-11-25T12:50:30.513Z [31/90] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/C_/ncs/F798-ssd1357/modules/crypto/mbedtls/library/pem.c.obj
+2026-11-25T12:50:30.514Z [32/90] Building C object modules/nrf/subsys/nrf_security/src/drivers/cracen/CMakeFiles/cracen_psa_driver.dir/cracenpsa/src/internal/pake/cracen_spake2p_key_management.c.obj
+2026-11-25T12:50:30.514Z [33/90] Building C object modules/nrf/subsys/nrf_security/src/drivers/cracen/CMakeFiles/cracen_psa_driver.dir/cracenpsa/src/cracen_psa_ikg.c.obj
+2026-11-25T12:50:30.514Z [34/90] Building C object modules/nrf/subsys/nrf_security/src/drivers/cracen/CMakeFiles/cracen_psa_driver.dir/cracenpsa/src/internal/pake/cracen_wpa3_key_management.c.obj
+2026-11-25T12:50:30.514Z [35/90] Building C object modules/nrf/subsys/nrf_security/src/drivers/cracen/CMakeFiles/cracen_psa_driver.dir/cracenpsa/src/internal/pake/cracen_srp_key_management.c.obj
+2026-11-25T12:50:30.514Z [36/90] Building C object modules/nrf/subsys/nrf_security/src/drivers/cracen/CMakeFiles/cracen_psa_driver.dir/cracenpsa/src/cracen_psa_key_management.c.obj
+2026-11-25T12:50:30.514Z [37/90] Building C object modules/nrf/subsys/nrf_security/src/core/nrf_oberon/CMakeFiles/psa_core.dir/C_/ncs/F798-ssd1357/modules/crypto/oberon-psa-crypto/library/psa_crypto_storage.c.obj
+2026-11-25T12:50:30.514Z [38/90] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/C_/ncs/F798-ssd1357/modules/crypto/mbedtls/library/pkcs12.c.obj
+2026-11-25T12:50:30.514Z [39/90] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/C_/ncs/F798-ssd1357/modules/crypto/mbedtls/library/pkcs5.c.obj
+2026-11-25T12:50:30.514Z [40/90] Building C object modules/nrf/subsys/nrf_security/src/drivers/cracen/CMakeFiles/cracen_psa_driver.dir/cracenpsa/src/internal/rsa/cracen_rsa_key_management.c.obj
+2026-11-25T12:50:30.514Z [41/90] Building C object modules/nrf/subsys/nrf_security/src/drivers/cracen/CMakeFiles/cracen_psa_driver.dir/cracenpsa/src/cracen_psa_ctr_drbg.c.obj
+2026-11-25T12:50:30.678Z [42/90] Building C object modules/nrf/subsys/nrf_security/src/drivers/cracen/CMakeFiles/cracen_psa_driver.dir/cracenpsa/src/cracen_psa_mac.c.obj
+2026-11-25T12:50:30.678Z [43/90] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/C_/ncs/F798-ssd1357/modules/crypto/mbedtls/library/pkwrite.c.obj
+2026-11-25T12:50:30.678Z [44/90] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/C_/ncs/F798-ssd1357/modules/crypto/mbedtls/library/pk_wrap.c.obj
+2026-11-25T12:50:30.678Z [45/90] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/C_/ncs/F798-ssd1357/modules/crypto/mbedtls/library/md.c.obj
+2026-11-25T12:50:30.678Z [46/90] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/C_/ncs/F798-ssd1357/modules/crypto/mbedtls/library/pkparse.c.obj
+2026-11-25T12:50:30.678Z [47/90] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/C_/ncs/F798-ssd1357/modules/crypto/mbedtls/library/pk.c.obj
+2026-11-25T12:50:30.678Z [48/90] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/C_/ncs/F798-ssd1357/modules/crypto/mbedtls/library/dhm.c.obj
+2026-11-25T12:50:30.678Z [49/90] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/C_/ncs/F798-ssd1357/modules/crypto/mbedtls/library/cipher.c.obj
+2026-11-25T12:50:30.742Z [50/90] Building C object modules/nrf/subsys/nrf_security/src/core/nrf_oberon/CMakeFiles/psa_core.dir/C_/ncs/F798-ssd1357/modules/crypto/oberon-psa-crypto/library/psa_crypto_client.c.obj
+2026-11-25T12:50:30.742Z [51/90] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/C_/ncs/F798-ssd1357/modules/crypto/mbedtls/library/cipher_wrap.c.obj
+2026-11-25T12:50:30.742Z [52/90] Linking C static library modules\nrf\subsys\nrf_security\src\libmbedcrypto_base.a
+2026-11-25T12:50:30.742Z [53/90] Building C object modules/nrf/subsys/nrf_security/src/drivers/cracen/CMakeFiles/cracen_psa_driver.dir/cracenpsa/src/internal/ecc/cracen_ecdsa.c.obj
+2026-11-25T12:50:30.742Z [54/90] Building C object modules/nrf/subsys/nrf_security/src/core/nrf_oberon/CMakeFiles/psa_core.dir/bb7ed5c08560234a29d4049797bb4b8a/oberon-psa-crypto/library/psa_crypto_slot_management.c.obj
+2026-11-25T12:50:30.742Z [55/90] Building C object modules/nrf/subsys/nrf_security/src/drivers/cracen/CMakeFiles/cracen_psa_driver.dir/cracenpsa/src/cracen_psa_kmu.c.obj
+2026-11-25T12:50:30.935Z [56/90] Building C object modules/nrf/subsys/nrf_security/src/core/nrf_oberon/CMakeFiles/psa_core.dir/C_/ncs/F798-ssd1357/nrf/subsys/nrf_security/src/psa_crypto_driver_wrappers.c.obj
+2026-11-25T12:50:30.979Z [57/90] Building C object modules/nrf/subsys/nrf_security/src/core/nrf_oberon/CMakeFiles/psa_core.dir/C_/ncs/F798-ssd1357/modules/crypto/oberon-psa-crypto/library/platform_util.c.obj
+2026-11-25T12:50:31.010Z [58/90] Building C object zephyr/kernel/CMakeFiles/kernel.dir/version.c.obj
+2026-11-25T12:50:31.105Z [59/90] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/C_/ncs/F798-ssd1357/modules/crypto/mbedtls/library/psa_util.c.obj
+2026-11-25T12:50:31.107Z [60/90] Building C object CMakeFiles/app.dir/src/resources/img_88112_261123_youwe.c.obj
+2026-11-25T12:50:31.129Z [61/90] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/C_/ncs/F798-ssd1357/modules/crypto/mbedtls/library/memory_buffer_alloc.c.obj
+2026-11-25T12:50:31.142Z [62/90] Building C object CMakeFiles/app.dir/src/resources/img_88112_261123_youwe2.c.obj
+2026-11-25T12:50:31.203Z [63/90] Building C object zephyr/CMakeFiles/zephyr.dir/C_/ncs/F798-ssd1357/nrf/lib/boot_banner/banner.c.obj
+2026-11-25T12:50:31.203Z [64/90] Building C object zephyr/drivers/entropy/CMakeFiles/drivers__entropy.dir/entropy_psa_crypto.c.obj
+2026-11-25T12:50:31.257Z [65/90] Building C object modules/nrf/subsys/nrf_security/src/core/nrf_oberon/CMakeFiles/psa_core.dir/C_/ncs/F798-ssd1357/nrf/subsys/nrf_security/src/mbedtls_psa_platform.c.obj
+2026-11-25T12:50:31.257Z [66/90] Building C object CMakeFiles/app.dir/src/resources/img_88112_261123_tel.c.obj
+2026-11-25T12:50:31.279Z [67/90] Building C object modules/nrf/subsys/nrf_security/src/zephyr/CMakeFiles/mbedtls_zephyr.dir/entropy_poll.c.obj
+2026-11-25T12:50:31.283Z [68/90] Building C object modules/nrf/subsys/nrf_security/src/zephyr/CMakeFiles/mbedtls_zephyr.dir/mbedtls_heap.c.obj
+2026-11-25T12:50:31.319Z [69/90] Building C object modules/nrf/subsys/nrf_security/src/CMakeFiles/mbedcrypto.dir/C_/ncs/F798-ssd1357/modules/crypto/mbedtls/library/pk_ecc.c.obj
+2026-11-25T12:50:31.381Z [70/90] Linking C static library zephyr\drivers\entropy\libdrivers__entropy.a
+2026-11-25T12:50:31.438Z [71/90] Generating linker_zephyr_pre0.cmd
+2026-11-25T12:50:31.477Z [72/90] Building C object zephyr/kernel/CMakeFiles/kernel.dir/banner.c.obj
+2026-11-25T12:50:31.539Z [73/90] Linking C static library modules\nrf\subsys\nrf_security\src\drivers\cracen\libcracen_psa_driver.a
+2026-11-25T12:50:31.553Z [74/90] Building C object modules/nrf/subsys/nrf_security/src/zephyr/CMakeFiles/mbedtls_zephyr.dir/psa_crypto_init.c.obj
+2026-11-25T12:50:31.663Z [75/90] Linking C static library modules\nrf\subsys\nrf_security\src\zephyr\libmbedtls_zephyr.a
+2026-11-25T12:50:31.722Z [76/90] Building C object CMakeFiles/app.dir/src/main.c.obj
+2026-11-25T12:50:31.722Z [01m[KC:/ncs/F798-ssd1357/zephyr/samples/bluetooth/peripheral_nus/src/main.c:[m[K In function '[01m[Kmain[m[K':
+2026-11-25T12:50:31.722Z [01m[KC:/ncs/F798-ssd1357/zephyr/samples/bluetooth/peripheral_nus/src/main.c:592:27:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[Kindex_ds[m[K' [[01;35m[K-Wunused-variable[m[K]
+2026-11-25T12:50:31.722Z   592 |     uint32_t counter = 0, [01;35m[Kindex_ds[m[K = 0;
+2026-11-25T12:50:31.723Z       |                           [01;35m[K^~~~~~~~[m[K
+2026-11-25T12:50:31.723Z [01m[KC:/ncs/F798-ssd1357/zephyr/samples/bluetooth/peripheral_nus/src/main.c:592:14:[m[K [01;35m[Kwarning: [m[Kunused variable '[01m[Kcounter[m[K' [[01;35m[K-Wunused-variable[m[K]
+2026-11-25T12:50:31.723Z   592 |     uint32_t [01;35m[Kcounter[m[K = 0, index_ds = 0;
+2026-11-25T12:50:31.723Z       |              [01;35m[K^~~~~~~[m[K
+2026-11-25T12:50:31.723Z [01m[KC:/ncs/F798-ssd1357/zephyr/samples/bluetooth/peripheral_nus/src/main.c:[m[K At top level:
+2026-11-25T12:50:31.723Z [01m[KC:/ncs/F798-ssd1357/zephyr/samples/bluetooth/peripheral_nus/src/main.c:465:13:[m[K [01;35m[Kwarning: [m[K'[01m[Kimg_pending[m[K' defined but not used [[01;35m[K-Wunused-variable[m[K]
+2026-11-25T12:50:31.723Z   465 | static bool [01;35m[Kimg_pending[m[K = false;
+2026-11-25T12:50:31.723Z       |             [01;35m[K^~~~~~~~~~~[m[K
+2026-11-25T12:50:31.869Z [77/90] Linking C static library app\libapp.a
+2026-11-25T12:50:31.872Z [78/90] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/gatt.c.obj
+2026-11-25T12:50:31.937Z [79/90] Linking C static library zephyr\kernel\libkernel.a
+2026-11-25T12:50:31.969Z [80/90] Building C object modules/nrf/subsys/nrf_security/src/core/nrf_oberon/CMakeFiles/psa_core.dir/C_/ncs/F798-ssd1357/modules/crypto/oberon-psa-crypto/library/psa_crypto.c.obj
+2026-11-25T12:50:32.084Z [81/90] Linking C static library modules\nrf\subsys\nrf_security\src\core\nrf_oberon\libpsa_core.a
+2026-11-25T12:50:32.096Z [82/90] Linking C static library zephyr\subsys\bluetooth\host\libsubsys__bluetooth__host.a
+2026-11-25T12:50:32.207Z [83/90] Linking C static library modules\nrf\subsys\nrf_security\src\libmbedcrypto.a
+2026-11-25T12:50:32.565Z [84/90] Linking C static library zephyr\libzephyr.a
+2026-11-25T12:50:33.700Z [85/90] Linking C executable zephyr\zephyr_pre0.elf; Logical command for additional byproducts on target: zephyr_pre0
+2026-11-25T12:50:33.851Z [86/90] Generating linker.cmd
+2026-11-25T12:50:34.250Z [87/90] Generating isr_tables.c, isr_tables_vt.ld, isr_tables_swi.ld
+2026-11-25T12:50:34.529Z [88/90] Building C object zephyr/CMakeFiles/zephyr_final.dir/isr_tables.c.obj
+2026-11-25T12:50:35.833Z [89/90] Linking C executable zephyr\zephyr.elf
+2026-11-25T12:50:35.833Z Memory region         Used Size  Region Size  %age Used
+2026-11-25T12:50:35.833Z            FLASH:      455416 B      1428 KB     31.14%
+2026-11-25T12:50:35.833Z              RAM:       80416 B       188 KB     41.77%
+2026-11-25T12:50:35.833Z         IDT_LIST:          0 GB        32 KB      0.00%
+2026-11-25T12:50:35.833Z Generating files from C:/ncs/F798-ssd1357/zephyr/samples/bluetooth/peripheral_nus/build/peripheral_nus/zephyr/zephyr.elf for board: nrf54l15dk/nrf54l15/cpuapp
+2026-11-25T12:50:35.889Z [2/5] No install step for 'peripheral_nus'
+2026-11-25T12:50:35.981Z [3/5] Completed 'peripheral_nus'
+2026-11-25T12:50:36.021Z [4/5] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\ncs\F798-ssd1357\zephyr\samples\bluetooth\peripheral_nus\build\_sysbuild && C:\ncs\toolchains\936afb6332\opt\bin\cmake.exe -E true"
+2026-11-25T12:50:36.312Z [5/5] Generating ../merged.hex

@@ -1,0 +1,2 @@
+"nrf":"C:/ncs/F798-ssd1357/nrf":"C:/ncs/F798-ssd1357/nrf/sysbuild"
+"mcuboot":"C:/ncs/F798-ssd1357/bootloader/mcuboot":"C:/ncs/F798-ssd1357/bootloader/mcuboot/boot/zephyr/sysbuild"

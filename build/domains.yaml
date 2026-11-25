@@ -1,0 +1,7 @@
+default: peripheral_nus
+build_dir: C:/ncs/F798-ssd1357/zephyr/samples/bluetooth/peripheral_nus/build
+domains:
+  - name: peripheral_nus
+    build_dir: C:/ncs/F798-ssd1357/zephyr/samples/bluetooth/peripheral_nus/build/peripheral_nus
+flash_order:
+  - peripheral_nus

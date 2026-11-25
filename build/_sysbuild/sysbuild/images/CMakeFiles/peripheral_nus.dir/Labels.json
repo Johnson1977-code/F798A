@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/ncs/F798-ssd1357/zephyr/samples/bluetooth/peripheral_nus/build/_sysbuild/sysbuild/images/CMakeFiles/peripheral_nus"
+		},
+		{
+			"file" : "C:/ncs/F798-ssd1357/zephyr/samples/bluetooth/peripheral_nus/build/_sysbuild/sysbuild/images/CMakeFiles/peripheral_nus.rule"
+		},
+		{
+			"file" : "C:/ncs/F798-ssd1357/zephyr/samples/bluetooth/peripheral_nus/build/_sysbuild/sysbuild/images/CMakeFiles/peripheral_nus-complete.rule"
+		},
+		{
+			"file" : "C:/ncs/F798-ssd1357/zephyr/samples/bluetooth/peripheral_nus/build/_sysbuild/sysbuild/images/peripheral_nus-prefix/src/peripheral_nus-stamp/peripheral_nus-build.rule"
+		},
+		{
+			"file" : "C:/ncs/F798-ssd1357/zephyr/samples/bluetooth/peripheral_nus/build/_sysbuild/sysbuild/images/peripheral_nus-prefix/src/peripheral_nus-stamp/peripheral_nus-configure.rule"
+		},
+		{
+			"file" : "C:/ncs/F798-ssd1357/zephyr/samples/bluetooth/peripheral_nus/build/_sysbuild/sysbuild/images/peripheral_nus-prefix/src/peripheral_nus-stamp/peripheral_nus-download.rule"
+		},
+		{
+			"file" : "C:/ncs/F798-ssd1357/zephyr/samples/bluetooth/peripheral_nus/build/_sysbuild/sysbuild/images/peripheral_nus-prefix/src/peripheral_nus-stamp/peripheral_nus-install.rule"
+		},
+		{
+			"file" : "C:/ncs/F798-ssd1357/zephyr/samples/bluetooth/peripheral_nus/build/_sysbuild/sysbuild/images/peripheral_nus-prefix/src/peripheral_nus-stamp/peripheral_nus-mkdir.rule"
+		},
+		{
+			"file" : "C:/ncs/F798-ssd1357/zephyr/samples/bluetooth/peripheral_nus/build/_sysbuild/sysbuild/images/peripheral_nus-prefix/src/peripheral_nus-stamp/peripheral_nus-patch.rule"
+		},
+		{
+			"file" : "C:/ncs/F798-ssd1357/zephyr/samples/bluetooth/peripheral_nus/build/_sysbuild/sysbuild/images/peripheral_nus-prefix/src/peripheral_nus-stamp/peripheral_nus-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"peripheral_nus"
+		],
+		"name" : "peripheral_nus"
+	}
+}

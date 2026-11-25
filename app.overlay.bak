@@ -1,0 +1,70 @@
+/* SSD1357 Display */
+#include <zephyr/dt-bindings/gpio/gpio.h>
+
+/ {
+    chosen {
+        zephyr,display = &ssd1357;
+    };
+
+    mipi_dbi {
+        compatible = "zephyr,mipi-dbi-spi";
+        spi-dev = <&spi00>;          // 指向你的 SPI00 节点
+        dc-gpios = <&gpio2 6 GPIO_ACTIVE_HIGH>;
+        reset-gpios = <&gpio2 7 GPIO_ACTIVE_LOW>;
+        write-only;
+        #address-cells = <1>;
+        #size-cells = <0>;
+        status = "okay";
+
+        ssd1357: ssd1357@0 {
+            compatible = "solomon,ssd1357";
+            reg = <0>;
+            mipi-max-frequency = <32000000>;
+            mipi-mode = "MIPI_DBI_MODE_SPI_3WIRE";
+            width = <128>;
+            height = <96>;
+            /* pixel-format 这行删除，不要在设备树里写 */
+            status = "okay";
+
+            display-offset = <0>;
+            start-line = <0>;
+	        multiplex-ratio = <0>;
+            phase-length = <0>;
+            oscillator-freq = <0>;
+            precharge-voltage = <0>;
+            precharge-time = <0>;
+            vcomh-voltage = <0>;
+            current-att = <0>;
+            remap-value = <0>;
+            column-offset = <0>;
+        };
+    };
+};
+
+
+&pinctrl {
+  spi00_default: spi00_default {
+    group1 {
+      psels = <NRF_PSEL(SPIM_SCK, 2, 1)>,
+              <NRF_PSEL(SPIM_MOSI, 2, 8)>,
+              <NRF_PSEL(SPIM_MISO, 2, 4)>;
+    };
+  };
+  spi00_sleep: spi00_sleep {
+    group1 {
+      psels = <NRF_PSEL(SPIM_SCK, 2, 1)>,
+              <NRF_PSEL(SPIM_MOSI, 2, 8)>,
+              <NRF_PSEL(SPIM_MISO, 2, 4)>;
+      low-power-enable;
+    };
+  };
+};
+
+&spi00 {
+  status = "okay";
+  pinctrl-0 = <&spi00_default>;
+  pinctrl-1 = <&spi00_sleep>;
+  pinctrl-names = "default", "sleep";
+  cs-gpios = <&gpio2 5 GPIO_ACTIVE_LOW>;
+};
+

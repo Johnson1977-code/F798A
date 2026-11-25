@@ -1,0 +1,13 @@
+# Target labels
+ peripheral_nus
+# Source files and their labels
+C:/ncs/F798-ssd1357/zephyr/samples/bluetooth/peripheral_nus/build/_sysbuild/sysbuild/images/CMakeFiles/peripheral_nus
+C:/ncs/F798-ssd1357/zephyr/samples/bluetooth/peripheral_nus/build/_sysbuild/sysbuild/images/CMakeFiles/peripheral_nus.rule
+C:/ncs/F798-ssd1357/zephyr/samples/bluetooth/peripheral_nus/build/_sysbuild/sysbuild/images/CMakeFiles/peripheral_nus-complete.rule
+C:/ncs/F798-ssd1357/zephyr/samples/bluetooth/peripheral_nus/build/_sysbuild/sysbuild/images/peripheral_nus-prefix/src/peripheral_nus-stamp/peripheral_nus-build.rule
+C:/ncs/F798-ssd1357/zephyr/samples/bluetooth/peripheral_nus/build/_sysbuild/sysbuild/images/peripheral_nus-prefix/src/peripheral_nus-stamp/peripheral_nus-configure.rule
+C:/ncs/F798-ssd1357/zephyr/samples/bluetooth/peripheral_nus/build/_sysbuild/sysbuild/images/peripheral_nus-prefix/src/peripheral_nus-stamp/peripheral_nus-download.rule
+C:/ncs/F798-ssd1357/zephyr/samples/bluetooth/peripheral_nus/build/_sysbuild/sysbuild/images/peripheral_nus-prefix/src/peripheral_nus-stamp/peripheral_nus-install.rule
+C:/ncs/F798-ssd1357/zephyr/samples/bluetooth/peripheral_nus/build/_sysbuild/sysbuild/images/peripheral_nus-prefix/src/peripheral_nus-stamp/peripheral_nus-mkdir.rule
+C:/ncs/F798-ssd1357/zephyr/samples/bluetooth/peripheral_nus/build/_sysbuild/sysbuild/images/peripheral_nus-prefix/src/peripheral_nus-stamp/peripheral_nus-patch.rule
+C:/ncs/F798-ssd1357/zephyr/samples/bluetooth/peripheral_nus/build/_sysbuild/sysbuild/images/peripheral_nus-prefix/src/peripheral_nus-stamp/peripheral_nus-update.rule

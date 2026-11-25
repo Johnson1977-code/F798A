@@ -1,0 +1,118 @@
+#include <zephyr/dt-bindings/gpio/gpio.h>
+#include <zephyr/dt-bindings/pinctrl/nrf-pinctrl.h>
+
+/ {
+    chosen {
+        zephyr,display = &ssd1357;
+        zephyr,console = &uart20;
+    };
+
+    /* ---------- SSD1357 MIPI-DBI ---------- */
+    mipi_dbi: mipi_dbi {
+        compatible = "zephyr,mipi-dbi-spi";
+        spi-dev = <&spi00>;
+        dc-gpios = <&gpio2 4 GPIO_ACTIVE_HIGH>;
+        reset-gpios = <&gpio1 2 GPIO_ACTIVE_LOW>;
+        xfr-min-bits = "MIPI_DBI_SPI_XFR_8BIT";
+        #address-cells = <1>;
+        #size-cells = <0>;
+        status = "okay";
+
+        ssd1357: ssd1357@0 {
+            compatible = "solomon,ssd1357";
+            reg = <0>;
+            mipi-max-frequency = <8000000>;
+            mipi-mode = "MIPI_DBI_MODE_SPI_4WIRE";
+            width = <128>;
+            height = <128>;
+            display-offset = <0>;
+            start-line = <0>;
+            multiplex-ratio = <127>;
+            phase-length = <0x77>;
+            oscillator-freq = <0xF1>;
+            precharge-time = <0x08>;
+            precharge-voltage = <0x17>;
+            vcomh-voltage = <0x05>;
+            current-att = <0x0F>;
+            remap-value = <0x74>;
+            status = "okay";
+        };
+    };
+};
+
+/* ---------- 禁用 LFXO（外部板无 32.768k 晶振） ---------- */
+&lfxo {
+    status = "disabled";
+};
+
+/* ---------- HFXO 32M 配置 ---------- */
+&hfxo {
+    status = "okay";
+    clock-frequency = <32000000>;
+    load-capacitors = "internal";
+    load-capacitance-femtofarad = <16000>;
+};
+
+/* ---------- UART20 (VCOM1) TX→P1.13 ---------- */
+&pinctrl {
+
+
+    uart20_default: uart20_default {
+        group1 {
+            psels = <NRF_PSEL(UART_TX, 1, 13)>,
+                    <NRF_PSEL(UART_RX, 1, 14)>;
+        };
+    };
+
+    uart20_sleep: uart20_sleep {
+        group1 {
+            psels = <NRF_PSEL(UART_TX, 1, 13)>,
+                    <NRF_PSEL(UART_RX, 1, 14)>;
+            low-power-enable;
+        };
+    };
+
+    /* ---------- SPI00 (原有，不变) ---------- */
+    spi00_default: spi00_default {
+        group1 {
+            psels = <NRF_PSEL(SPIM_SCK, 2, 1)>,
+                    <NRF_PSEL(SPIM_MOSI, 2, 2)>,
+                    <NRF_PSEL(SPIM_MISO, 2, 3)>;
+        };
+    };
+
+    spi00_sleep: spi00_sleep {
+        group1 {
+            psels = <NRF_PSEL(SPIM_SCK, 2, 1)>,
+                    <NRF_PSEL(SPIM_MOSI, 2, 2)>,
+                    <NRF_PSEL(SPIM_MISO, 2, 3)>;
+            low-power-enable;
+        };
+    };
+};
+
+&uart20 {
+    status = "okay";
+    current-speed = <115200>;
+    pinctrl-0 = <&uart20_default>;
+    pinctrl-1 = <&uart20_sleep>;
+    pinctrl-names = "default", "sleep";
+    /delete-property/hw-flow-control;
+};
+
+&spi00 {
+    status = "okay";
+    compatible = "nordic,nrf-spim";
+    pinctrl-0 = <&spi00_default>;
+    pinctrl-1 = <&spi00_sleep>;
+    pinctrl-names = "default", "sleep";
+    cs-gpios = <&gpio2 5 GPIO_ACTIVE_LOW>;
+};
+
+&uicr {
+    nfct-pins-as-gpios;
+};
+
+&nfct {
+    status = "disabled";
+};
